@@ -5,14 +5,11 @@ const api = {
   key: "e6e46173529d5a4dd10b696b01978468",
   base: "https://api.openweathermap.org/data/2.5/",
 };
-const url =
-  "https://api.openweathermap.org/data/2.5/weather?q=Northampton&units=metric&APPID=e6e46173529d5a4dd10b696b01978468";
 
 function App() {
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState({});
 
-  //`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`
   const search = (evt) => {
     if (evt.key === "Enter") {
       fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
