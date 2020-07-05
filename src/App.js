@@ -100,7 +100,6 @@ function App() {
               <div className="date">{dateBuilder(new Date())}</div>
             </div>
             <div className="weather-box">
-              <div className="temp">Temperature</div>
               <div className="weather">Is it rainy or sunny?</div>
             </div>
           </div>
